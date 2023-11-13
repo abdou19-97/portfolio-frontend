@@ -44,7 +44,7 @@ async function fetchComments(id, setComments) {
       `https://appmomentum.onrender.com/api/posts/${id}/comments/`
     );
     setComments(response.data);
-    console.log(response.data);
+    console.log("Response data:", response.data); // Add this line
   } catch (error) {
     console.error("Error getting comments:", error);
   }
@@ -87,7 +87,9 @@ const PostDetails = () => {
                   <li key={comment.id}>{comment.content}</li>
                 ))}
               </ul>
-            ) : null}
+            ) : (
+              <p>No comments yet.</p>
+            )}
           </div>
           <CreateComment id={id} />
         </div>
