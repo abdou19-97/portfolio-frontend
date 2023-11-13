@@ -19,6 +19,7 @@ function CreateComment({ id }) {
       );
 
       setComment("");
+      console.log("Response data:", response.data); // Add this line
     } catch (error) {
       console.error("Error creating comment:", error);
     }
@@ -44,7 +45,6 @@ async function fetchComments(id, setComments) {
       `https://appmomentum.onrender.com/api/posts/${id}/comments/`
     );
     setComments(response.data);
-    console.log("Response data:", response.data); // Add this line
   } catch (error) {
     console.error("Error getting comments:", error);
   }
