@@ -14,7 +14,6 @@ const Mywork = () => {
           "https://appmomentum.onrender.com/api/posts/"
         );
         setPosts(response.data);
-        console.log(response.data);
       } catch (error) {
         console.log(error);
       }

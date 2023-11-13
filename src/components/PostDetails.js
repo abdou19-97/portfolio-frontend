@@ -42,7 +42,7 @@ function CreateComment({ id }) {
 async function fetchComments(id, setComments) {
   try {
     const response = await axios.get(
-      `https://appmomentum.onrender.com/api/posts/${id}/comments/`
+      `https://appmomentum.onrender.com/api/posts/1/comments/`
     );
     setComments(response.data);
   } catch (error) {
