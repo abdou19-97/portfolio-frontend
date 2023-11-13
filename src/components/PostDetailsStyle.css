@@ -1,0 +1,42 @@
+/* FILEPATH: /c:/Users/diyam/OneDrive/Desktop/abdou-blog/backend/frontend/src/components/PostDetailsStyle.css */
+.post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
+
+.post-details {
+  background-color: skyblue;
+  padding: 1.2rem 1rem;
+  padding-bottom: 20px;
+}
+.post-details p h1 {
+  padding-bottom: 1rem;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+.post-details h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.post-details p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.post-details img {
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+.post-details a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.post-details a:hover {
+  text-decoration: underline;
+}
