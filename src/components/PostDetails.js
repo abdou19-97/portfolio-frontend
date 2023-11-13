@@ -11,7 +11,7 @@ function CreateComment({ id }) {
     e.preventDefault();
     try {
       const response = await axios.post(
-        `http://127.0.0.1:8000/api/posts/${id}/comments/`,
+        `https://appmomentum.onrender.com/api/posts/${id}/comments/`,
         {
           content: comment,
           post: id,
@@ -41,7 +41,7 @@ function CreateComment({ id }) {
 async function fetchComments(id, setComments) {
   try {
     const response = await axios.get(
-      `http://127.0.0.1:8000/api/posts/${id}/comments/`
+      `https://appmomentum.onrender.com/api/posts/${id}/comments/`
     );
     setComments(response.data);
     console.log(response.data);
@@ -59,7 +59,7 @@ const PostDetails = () => {
   useEffect(() => {
     // Fetch the post details using Axios
     axios
-      .get(`http://127.0.0.1:8000/api/posts/${id}`)
+      .get(`https://appmomentum.onrender.com/api/posts/${id}/`)
       .then((response) => {
         // Set the post details in the state
         setPost(response.data);

@@ -10,7 +10,9 @@ const Mywork = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await axios.get("http://0.0.0.0:8000/api/posts/");
+        const response = await axios.get(
+          "https://appmomentum.onrender.com/api/posts/"
+        );
         setPosts(response.data);
       } catch (error) {
         console.log(error);
