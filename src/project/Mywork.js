@@ -29,9 +29,6 @@ const Mywork = () => {
           <Link to={`/PostDetails/${post.id}`} key={post.id}>
             <div className="project-card">
               <h2 className="project-title">{post.title}</h2>
-              {/* <div className="project-description">
-                <p>{post.content}</p>
-              </div> */}
             </div>
           </Link>
         ))}

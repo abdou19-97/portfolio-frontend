@@ -10,7 +10,6 @@ import "./PostDetailsStyle.css";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-console.log("PostDetails.js...");
 // Time to create a comment for the post
 function CreateComment({ id }) {
   const [comment, setComment] = useState("");
@@ -27,7 +26,6 @@ function CreateComment({ id }) {
       );
 
       setComment("");
-      console.log("Response data:", response.data); // Add this line
     } catch (error) {
       console.error("Error creating comment:", error);
     }
