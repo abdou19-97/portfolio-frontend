@@ -4,12 +4,11 @@ import React from "react";
 // import "./images/home-bg.jpg";
 import "./index.css";
 import { Route, Routes } from "react-router-dom";
-// import { Container } from "react-bootstrap";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Projects from "./Pages/Projects";
-// import resume from "./Components/Resume";
+import PostDetails from "./components/PostDetails";
 
 function App() {
   return (
@@ -19,6 +18,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/PostDetails/:id" element={<PostDetails />} />
       </Routes>
     </>
   );
