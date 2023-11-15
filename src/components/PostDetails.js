@@ -63,14 +63,12 @@ const PostDetails = () => {
 
   // Use effect to fetch the posts
   useEffect(() => {
-    console.log("Posting details...");
     // Fetch the post details using Axios
     axios
       .get(`https://appmomentum.onrender.com/api/posts/${id}/`)
       .then((response) => {
         // Set the post details in the state
         setPost(response.data);
-        console.log("Response data:", response.data);
       })
       .catch((error) => {
         console.log(error);
