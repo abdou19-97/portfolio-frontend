@@ -1,3 +1,10 @@
+/**
+ * I had some challenges to have this pages working.
+ * I later figured out that the problem was that I didn't route
+ * the page in the App.js file since all the pages must be routed
+ * in the App.js file.
+ */
+
 import axios from "axios";
 import "./PostDetailsStyle.css";
 import React, { useEffect, useState } from "react";
@@ -77,7 +84,7 @@ const PostDetails = () => {
 
   return (
     <div className="post">
-      <h1>Post Details</h1>
+      {/* <h1>Post Details</h1> */}
       {post ? (
         <div className="post-details">
           <h2>{post.title}</h2>
