@@ -84,7 +84,12 @@ const PostDetails = () => {
       {post ? (
         <div className="post-details">
           <h2>{post.title}</h2>
-          <p>{post.content}</p>
+          <div dangerouslySetInnerHTML={{ __html: post.content }} />
+          <span>Created: {new Date(post.date_created).toLocaleString()}</span>
+          <span>
+            {" "}
+            Last Updated: {new Date(post.date_updated).toLocaleString()}
+          </span>
           <div className="comments">
             <h3>Comments:</h3>
             {comments && Array.isArray(comments) && comments.length > 0 ? (
