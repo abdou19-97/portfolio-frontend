@@ -1,7 +1,4 @@
 import React from "react";
-// import "bootstrap/dist/css/bootstrap.min.css";
-// import "./style.css";
-// import "./images/home-bg.jpg";
 import "./index.css";
 import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
