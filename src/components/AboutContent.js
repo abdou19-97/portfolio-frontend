@@ -9,23 +9,24 @@ function AboutContent() {
       <div className="left">
         <h1>ABOUT ME</h1>
         <p>
-          I'm Abdou Sidiya, a computer science graduate with a passion for
-          building web applications and working with data structures. I recently
-          completed my bachelor's degree in computer science from IUPUI.
-          Throughout my academic journey, I had the opportunity to work on
-          several web development projects that allowed me to apply my knowledge
-          and enhance my skills. I also completed data structures assignments
-          and projects using languages like C++ and Java. I'm a dedicated team
-          player with strong communication and collaboration abilities. I thrive
-          in fast-paced environments and enjoy finding creative solutions to
-          complex problems. I am seeking entry-level to mid-level software
-          engineering, web development or application development roles where I
-          can apply my existing knowledge and also expand my skillset. I'm
-          excited to bring my passion for programming to build products that
-          deliver value and enrich user experiences. Please feel free to contact
-          me to explore opportunities where I can contribute my passion for
-          programming and delivering impactful products. I'm open to remote work
-          or relocating for the right opportunity.
+          I am Abdou Sidiya, a recent graduate in computer science deeply
+          passionate about crafting web applications and harnessing the
+          potential of data structures. My journey led me to acquire a
+          bachelor's degree in computer science from IUPUI, during which I
+          engaged in various web development projects, honing my skills and
+          putting theory into practice. My expertise extends to working on data
+          structures assignments and projects using languages such as C++ and
+          Java. As a committed team player, I excel in communication and
+          collaboration, thriving in dynamic settings where problem-solving is
+          paramount. I am actively pursuing opportunities in entry-level to
+          mid-level roles within software engineering, web development, or
+          application development. My goal is to leverage my current expertise
+          while expanding my skill set further. My enthusiasm for programming is
+          rooted in a desire to create products that offer substantial value and
+          enhance user experiences. I am eager to contribute my passion and
+          skills to initiatives that make a meaningful impact. Please don't
+          hesitate to reach out to explore potential collaborations. I am open
+          to remote work opportunities or relocating for the right role.
         </p>
         <Link to="/contact" className="btn">
           Contact
